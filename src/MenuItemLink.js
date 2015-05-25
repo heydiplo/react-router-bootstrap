@@ -4,8 +4,6 @@ var classSet = require('classnames');
 var MenuItem = require('react-bootstrap/lib/MenuItem');
 var LinkMixin = require('./LinkMixin');
 
-var joinClasses = require('react/lib/joinClasses');
-
 var MenuItemLink = React.createClass({
   mixins: [
     LinkMixin
@@ -20,7 +18,6 @@ var MenuItemLink = React.createClass({
       params,
       query,
       active,
-      onSelect, // Not going to use this, just stripping off the props!
       ...props} = this.props;
 
     if (active === undefined) {
